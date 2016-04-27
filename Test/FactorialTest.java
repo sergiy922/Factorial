@@ -4,14 +4,15 @@ import org.junit.Test;
 
 public class FactorialTest {
 @Test
-    public void testFactorial1()
-
-    {
-        int expencted = 3;
-        int actual = Factorial.bFactorial( 6 );
-        Assert.assertEquals(expencted, actual);
-
-        Assert.assertEquals( 2, Factorial.bFactorial( 2 ));
-    }
-    }
+    public void testFactorial1() {
+    Assert.assertEquals(2, Factorial.factorialFactorial(2));
 }
+    @Test
+    public void testFactorial2() {
+        Assert.assertEquals( 4, Factorial.factorialFactorial( 24 ));
+    }
+    @Test
+    public void testFactorial3() {
+        Assert.assertEquals( 3, Factorial.factorialFactorial( 6 ));
+    }
+    }
